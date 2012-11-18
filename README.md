@@ -46,47 +46,47 @@ Usage
 Just `cd` a folder (or subfolder of) with the same name that a Virtualenv:
 
 ```bash
-pev@mac505237:~$ ls ~/venvs/
-    apis     iammyweb mychest  vmining
-pev@mac505237:~$ cd wspace/iammyweb/axr/
-   ACTIVATED Virtualenv 'iammyweb'
-[iammyweb]pev@mac505237:~/wspace/iammyweb/axr (master)$
-[iammyweb]pev@mac505237:~/wspace/iammyweb/axr (master)$ cd
- DEACTIVATED Virtualenv 'iammyweb'
-pev@mac505237:~$ cd wspace/iammyweb/
-   ACTIVATED Virtualenv 'iammyweb'
-[iammyweb]pev@mac505237:~/wspace/iammyweb (master)$ cd ..
- DEACTIVATED Virtualenv 'iammyweb'
+me@mylaptop:~$ ls ~/venvs/
+    apis     projectXweb dashboard  vmining
+me@mylaptop:~$ cd wspace/projectXweb/axr/
+   ACTIVATED Virtualenv 'projectXweb'
+[projectXweb]me@mylaptop:~/wspace/projectXweb/axr (master)$
+[projectXweb]me@mylaptop:~/wspace/projectXweb/axr (master)$ cd
+ DEACTIVATED Virtualenv 'projectXweb'
+me@mylaptop:~$ cd wspace/projectXweb/
+   ACTIVATED Virtualenv 'projectXweb'
+[projectXweb]me@mylaptop:~/wspace/projectXweb (master)$ cd ..
+ DEACTIVATED Virtualenv 'projectXweb'
 ```
 
 Alternatively you can place a file defining the Virtualenv to be activated that folder:
 
 ```bash
-pev@mac505237:~/wspace$ cd smartbilling/
+me@mylaptop:~/wspace$ cd smartbilling/
    ACTIVATED Virtualenv 'apis'
-[apis]pev@mac505237:~/wspace/smartbilling (master)$ cat .venv
+[apis]me@mylaptop:~/wspace/smartbilling (master)$ cat .venv
 apis
-[apis]pev@mac505237:~/wspace/smartbilling (master)$ cd ../mychest/
+[apis]me@mylaptop:~/wspace/smartbilling (master)$ cd ../dashboard/
  DEACTIVATED Virtualenv 'apis'
-   ACTIVATED Virtualenv 'mychest'
-[mychest]pev@mac505237:~/wspace/mychest$ cat .venv
+   ACTIVATED Virtualenv 'dashboard'
+[dashboard]me@mylaptop:~/wspace/dashboard$ cat .venv
 cat: .venv: No such file or directory
 ```
 
-If you change the enabled virtualenv manually and you want to trigger again automatic virtualenv activation, just execute `auto_venv`:
+If you change the enabled virtualenv manually and you want to trigger again automatic virtualenv activation, just execute `auto_venv` or `cd` any folder:
 
 ```bash
-[frappe]pev@macpablo:~/wspace/frappe/trunk/backend/frappe-api$ deactivate 
-pev@macpablo:~/wspace/frappe/trunk/backend/frappe-api$ auto_venv
-   ACTIVATED Virtualenv 'frappe'
-[frappe]pev@macpablo:~/wspace/frappe/trunk/backend/frappe-api$ 
+[projectX]me@mylaptop:~/wspace/projectX/trunk/backend/projectX-api$ deactivate 
+me@mylaptop:~/wspace/projectX/trunk/backend/projectX-api$ auto_venv
+   ACTIVATED Virtualenv 'projectX'
+[projectX]me@mylaptop:~/wspace/projectX/trunk/backend/projectX-api$ 
 ```
 
 ```bash
-[frappe]pev@macpablo:~/wspace/frappe/trunk/backend/frappe-api$ cd
- DEACTIVATED Virtualenv 'frappe'
-pev@macpablo:~$ source venvs/kpis/bin/activate
-[kpis]pev@macpablo:~$ auto_venv
+[projectX]me@mylaptop:~/wspace/projectX/trunk/backend/projectX-api$ cd
+ DEACTIVATED Virtualenv 'projectX'
+me@mylaptop:~$ source venvs/kpis/bin/activate
+[kpis]me@mylaptop:~$ auto_venv
  DEACTIVATED Virtualenv 'kpis'
-pev@macpablo:~$ 
+me@mylaptop:~$ 
 ```
