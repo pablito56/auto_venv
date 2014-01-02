@@ -5,12 +5,13 @@ Bash script to be sourced from your `~/.bashrc` or `~/.bash_profile` to enable a
 
 Each time a folder is accessed (by means of `cd` command) the script will check if it belongs to a Virtualenv, either by the folder name or because a certain file indicates it. If no Virtualenv is found parent folders are checked recursively until a Virtualenv is found or root folder is reached.
 
-**NOTICE THAT auto_venv NOW IS PART OF MY DEVELOPMENT SCRIPTS REPO**
+**#################################**
 
-[devel_scripts](https://github.com/pablito56/devel_scripts)
+**NOTICE THAT auto_venv NOW IS PART OF MY DEVELOPMENT SCRIPTS REPO: [devel_scripts](https://github.com/pablito56/devel_scripts)**
 
 **CODE HERE WON'T BE UPDATED**
 
+**#################################**
 
 Requirements
 ------------
